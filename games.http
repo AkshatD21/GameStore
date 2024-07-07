@@ -1,0 +1,30 @@
+GET http://localhost:5075/games
+
+###
+GET http://localhost:5075/games/3
+
+###
+POST http://localhost:5075/games
+Content-type: application/json
+
+{
+    "name": "Hill Climb",
+    "genreId": 2,
+    "price": 6.99,
+    "releaseDate": "2010-01-04"
+}
+
+###
+PUT http://localhost:5075/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighter",
+    "genre": "Fighting",
+    "price": 1.99,
+    "releaseDate": "1992-07-05"
+}
+
+###
+DELETE http://localhost:5075/games/4
+
